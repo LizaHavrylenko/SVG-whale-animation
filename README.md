@@ -1,0 +1,1 @@
+SVG whale, created by me in Inkscape and animated with GSAP, SMIL, and CSS3 tools.
