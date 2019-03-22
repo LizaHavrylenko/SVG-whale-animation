@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js" defer></script>
+        <script src="index.js" defer></script>
+        <link rel="stylesheet" href="styles.css">
+        <title>Whale animation</title>
+    </head>
+
+    <body>          
+    <div class="container">
+        <svg 
+          width="2599.787"
+          height="1187.98" 
+          viewbox="0 0 687.86 314.32"
+          class="whale"
+        >
+            <g id="shape">
+                <path 
+                  d="M1074.567 387.434c12.35 24.819 5.569 61.15 22.904 66.778 49.428 16.051 30.055 39.95 30.055 39.95 6.575-11.768 26.671-26.314 42.59-27.112 20.357-1.643 40.36 1.438 40.36 438 25.309-6.254 40.025-14.544 56.507-25.1 1.34-.858-48.88 4.919-53.843-19.284-6.241-30.437-65.278 24.549-66.196 22.393-.809-1.898 4.248-25.84-32.342-27.484-23.326-1.049-40.035-31.579-40.035-31.579zM495.252 20.902c12.35 24.818 5.569 61.149 22.904 66.778 49.428 16.05 30.055 39.949 30.055 39.949 6.575-11.768 26.671-26.314 42.59-27.111 20.357-1.644 40.36 1.437 40.36 1.437 25.309-6.254 40.025-14.544 56.507-25.1 1.34-.858-48.88 4.92-53.843-19.283-6.241-30.438-65.278 24.548-66.196 22.392-.809-1.898 4.248-25.84-32.342-27.484-23.326-1.048-40.035-31.578-40.035-31.578z" fill="#f4f7fa"
+                  stroke="#000" 
+                  stroke-width=".337"
+                />
+                <path
+                  d="M186.2 2.089c-65.995-5.437-115.077.507-141.336 17.32-8.038 5.146-17.53 18.48-17.53 18.48-62.415 141.05-6.978 213.876 61.231 246.014 25.579 12.051 52.201 22.892 75.83 24.952 99.781 14.906 203.84-8.23 354.888-138.345 32.267-28.444 81.583-125.076 10.526-33.083-22.878 15.28-31.139 14.254-63.027 18.415C302.794 177.239 314.132 49.06 186.2 2.089z" fill="#f4f7fa" stroke="#00000f"
+                  stroke-width=".265"
+                  stroke-opacity=".941"
+                />
+            </g>
+            <g 
+              id="eye" 
+              transform="translate(-733.318 150.872)" 
+              fill-rule="evenodd" 
+              stroke="#0b0808"
+            >
+                <ellipse 
+                  ry="8.342"
+                  rx="11.562"
+                  cx="796.945" 
+                  cy="-83.494"
+                  fill="#fff" 
+                  stroke-width="1.116"
+                  stroke-dasharray=".11160517,.11160517"
+                />
+                <ellipse
+                  cy="-83.494" 
+                  cx="796.945" 
+                  rx="11.562" 
+                  ry="8.342" 
+                  fill="#fff" 
+                  stroke-width="1.116"
+                  stroke-dasharray=".11160517,.11160517"/>
+                <ellipse
+                  class="eye-inner"
+                  cy="-82.421"
+                  cx="795.871"
+                  rx="5.882" 
+                  ry="5.882" 
+                  fill="#160303"
+                  stroke-width=".668" 
+                  stroke-dasharray=".06684831,.06684831"
+                />
+            </g>
+            <g id="boat">
+                <path 
+                  d="M204.046 203.91c1.333-65.081 1.333-115.822 1.333-115.822l5.333-1.103-.667 122.44z"
+                  fill="#daa84d" 
+                  stroke="#000" 
+                  stroke-width=".206"
+                />
+                <path 
+                  d="M134.609 179.01a82.122 76.208 0 0 0 81.093 64.525 82.122 76.208 0 0 0 80.867-63.415s-.006-.002-161.96-1.11z" 
+                  fill="#392d17"
+                  fill-rule="evenodd" 
+                  stroke="#0b0808" 
+                  stroke-width="1.762"
+                  stroke-dasharray=".17617092,.17617092"
+                />
+                <path 
+                  d="M210.552 87.386l.134 21.716 70.3-2.305-52.807-9.569 48.7-9z"
+                  fill="#f3331f" 
+                  stroke="#000"
+                  stroke-width=".239"/>
+            </g>
+            <defs>  
+                <lineargradient 
+                  id="water-gradient" 
+                  x1="50%"
+                  y1="0%" 
+                  x2="50%"
+                  y2="100%" 
+                > 
+                    <stop offset="0%" stop-color="#467CB2">
+                        <animate 
+                          attributename="stop-color" 
+                          values="#467CB2; #004c29; #01FF89; #467CB2;"
+                          dur="8s" 
+                          repeatcount="indefinite">
+                        </animate>
+                    </stop>
+                    <stop offset="100%" stop-color="#01FF89">
+                        <animate 
+                          attributename="stop-color" 
+                          values="#46B27C; #01FF89; #004c29; #467CB2" 
+                          dur="8s" 
+                          repeatcount="indefinite">
+                        </animate>
+                    </stop>
+                </lineargradient> 
+            </defs>
+          <path 
+            id="water"
+            d="M11.918 208.069c15.54 35.765 42.283 62.178 74.247 77.238 25.579 12.052 52.2 22.894 75.83 24.954 85.917 12.834 175.007-2.54 294.532-90.122l.922-2.152s-10.175 14.495-126.429 23.309c-40.133 3.043-67.82 13.743-133.59-20.075-43.121-22.173-89.847-34.403-185.512-13.152z"
+            fill="url('#water-gradient')"
+            fill-opacity="0.7"
+            stroke="#000"
+            stroke-width=".265"
+          />
+        </svg>
+    </div>
+    </body>
+</html>

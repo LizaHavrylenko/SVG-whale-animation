@@ -1,0 +1,56 @@
+.container {
+    margin: 150px auto;
+    text-align: center;
+}
+
+.whale {
+    width: 50%;
+    height: 50%;
+}
+ 
+#boat {
+    animation: sail 3s linear infinite;
+}
+ 
+.eye-inner {
+    animation: moveEye 5s ease-in infinite;
+}
+
+@keyframes sail {
+   0% {
+     transform: rotate(0deg);
+   }
+   45% {
+    transform: rotate(7deg);
+   }
+   55% {
+    transform: rotate(4deg);
+   }
+   100% {
+    transform: rotate(0deg);
+   }
+}
+
+@keyframes moveEye {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0);  
+  }
+  65% {
+    transform: translate(-2px, -3px);
+  }
+  80% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+ 
+ 
+
+ 
+ 
